@@ -1,11 +1,11 @@
 const skillGroups = [
   {
     title: "Mobile & iOS Development",
-    skills: ["Swift", "SwiftUI", "iOS Frameworks", "Xcode", "UIKit"],
+    skills: ["Swift", "SwiftUI", "iOS Frameworks", "Xcode", "UIKit", "Firebase", "MVVM"],
   },
   {
     title: "Backend Development",
-    skills: ["C#", "ASP.NET Core MVC", "REST Services", "Web API"],
+    skills: ["C#", "ASP.NET Core MVC", "REST Services", "Web API", "ORM - Entity Framework"],
   },
   {
     title: "Database & Tools",
@@ -18,6 +18,15 @@ const skillGroups = [
   {
     title: "Tools & Other",
     skills: ["Git & GitHub", "Excel", "Word", "PowerPoint"],
+  },
+  {
+    title: "🤖Additional Technical Areas",
+    skills: [
+      "Python (NumPy, Pandas, Matplotlib)",
+      "Machine Learning",
+      "Apache Spark MLlib",
+      "Time Basic Linux / Terminal Commands",
+    ],
   },
 ];
 
