@@ -1,7 +1,7 @@
 const skillGroups = [
   {
     title: "Mobile & iOS Development",
-    skills: ["Swift", "SwiftUI", "iOS Frameworks", "Xcode"],
+    skills: ["Swift", "SwiftUI", "iOS Frameworks", "Xcode", "UIKit"],
   },
   {
     title: "Backend Development",
