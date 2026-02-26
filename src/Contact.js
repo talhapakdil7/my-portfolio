@@ -1,11 +1,15 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
 const contactLinkClass =
-  "flex flex-col sm:flex-row items-center gap-2 px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 " +
-  "bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm " +
-  "hover:text-primary hover:border-primary hover:bg-gray-200/80 dark:hover:bg-gray-800 " +
-  "hover:scale-[1.03] hover:shadow-md transition-all duration-200 " +
-  "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-gray-50 dark:focus:ring-offset-black";
+  "flex flex-col items-center justify-center gap-2 group " +
+  "text-gray-700 dark:text-gray-300 hover:text-primary transition-colors duration-200 " +
+  "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-gray-50 dark:focus:ring-offset-black rounded-full";
+
+const iconWrapClass =
+  "flex items-center justify-center w-12 h-12 rounded-full " +
+  "bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 " +
+  "group-hover:bg-primary/20 group-hover:border-2 group-hover:border-primary " +
+  "border-2 border-transparent transition-all duration-200 group-hover:scale-110";
 
 export default function Contact() {
   return (
@@ -19,7 +23,7 @@ export default function Contact() {
         Feel free to reach out for collaborations, freelancing opportunities, or professional inquiries.
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4">
+      <div className="flex flex-row justify-center items-center gap-8 sm:gap-10">
         <a
           href="https://github.com/talhapakdil7"
           target="_blank"
@@ -27,10 +31,10 @@ export default function Contact() {
           className={contactLinkClass}
           aria-label="GitHub profile"
         >
-          <span className="flex items-center justify-center w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 shrink-0">
-            <FaGithub size={18} />
+          <span className={iconWrapClass}>
+            <FaGithub size={22} />
           </span>
-          <span className="font-medium">GitHub</span>
+          <span className="text-xs font-medium">GitHub</span>
         </a>
 
         <a
@@ -40,10 +44,10 @@ export default function Contact() {
           className={contactLinkClass}
           aria-label="LinkedIn profile"
         >
-          <span className="flex items-center justify-center w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 shrink-0">
-            <FaLinkedin size={18} />
+          <span className={iconWrapClass}>
+            <FaLinkedin size={22} />
           </span>
-          <span className="font-medium">LinkedIn</span>
+          <span className="text-xs font-medium">LinkedIn</span>
         </a>
 
         <a
@@ -51,10 +55,10 @@ export default function Contact() {
           className={contactLinkClass}
           aria-label="Send email"
         >
-          <span className="flex items-center justify-center w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 shrink-0">
-            <FaEnvelope size={18} />
+          <span className={iconWrapClass}>
+            <FaEnvelope size={22} />
           </span>
-          <span className="font-medium">Email</span>
+          <span className="text-xs font-medium">Email</span>
         </a>
       </div>
     </section>
