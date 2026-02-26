@@ -12,7 +12,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="px-6 py-16 max-w-5xl mx-auto">
+    <section id="projects" className="px-6 py-20 max-w-5xl mx-auto border-t border-gray-200 dark:border-gray-800">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">Latest Projects</h2>
       <p className="text-gray-700 dark:text-gray-300 mb-6">Here are the latest 5 projects from my GitHub repository.</p>
 
@@ -25,7 +25,7 @@ export default function Projects() {
             rel="noreferrer"
             className="p-5 rounded-xl transition flex flex-col
                        bg-gray-100 border border-gray-200
-                       dark:bg-gray-900 dark:border-gray-700 hover:border-primary"
+                       dark:bg-gray-900 dark:border-gray-700 hover:border-primary hover:scale-[1.02] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-gray-50 dark:focus:ring-offset-black"
           >
             <h3 className="text-xl font-semibold mb-2">{repo.name}</h3>
             <p className="flex-1 text-gray-700 dark:text-gray-300">{repo.description || "No description provided."}</p>

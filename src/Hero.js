@@ -28,7 +28,7 @@ export default function Hero() {
         transition={{ duration: 1.1, delay: 0.5, ease: "easeOut" }}
         className="text-lg md:text-2xl mt-4 max-w-2xl text-gray-700 dark:text-gray-300"
       >
-        Computer Engineer • iOS Developer • Backend Developer (.NET)
+        Software Developer • Mobile iOS
       </motion.p>
 
       <motion.div
@@ -39,13 +39,13 @@ export default function Hero() {
       >
         <a
           href="#projects"
-          className="px-6 py-3 rounded-xl bg-primary hover:bg-secondary transition text-white font-semibold"
+          className="px-6 py-3 rounded-xl bg-primary hover:bg-secondary transition-all duration-200 text-white font-semibold hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-black"
         >
           View Projects
         </a>
         <a
           href="#contact"
-          className="px-6 py-3 rounded-xl border border-gray-400 dark:border-gray-600 hover:border-secondary transition"
+          className="px-6 py-3 rounded-xl border border-gray-400 dark:border-gray-600 hover:border-secondary transition-all duration-200 hover:scale-105 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-black"
         >
           Contact Me
         </a>

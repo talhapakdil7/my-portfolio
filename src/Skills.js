@@ -1,38 +1,29 @@
 const skillGroups = [
   {
-    title: "Mobile & iOS Development",
-    skills: ["Swift", "SwiftUI", "iOS Frameworks", "Xcode", "UIKit", "Firebase", "MVVM"],
+    title: "Mobile & iOS",
+    skills: ["iOS", "Swift", "SwiftUI", "UIKit", "Xcode", "Alamofire", "CoreData"],
   },
   {
-    title: "Backend Development",
-    skills: ["C#", "ASP.NET Core MVC", "REST Services", "Web API", "ORM - Entity Framework"],
-  },
-  {
-    title: "Database & Tools",
-    skills: ["SQL Server", "MySQL", "SQLite", "Postman", "Swagger"],
+    title: "Backend & APIs",
+    skills: ["C#", "ASP.NET Core MVC", "Rest Services", "FastAPI", "Python"],
   },
   {
     title: "Frontend & Web",
-    skills: ["HTML", "CSS", "Bootstrap", "React JS"],
+    skills: ["HTML/CSS", "Bootstrap"],
+  },
+  {
+    title: "Database & Services",
+    skills: ["SQL Server", "MySQL", "SQLite", "Firebase"],
   },
   {
     title: "Tools & Other",
-    skills: ["Git & GitHub", "Excel", "Word", "PowerPoint"],
-  },
-  {
-    title: "🤖Additional Technical Areas",
-    skills: [
-      "Python (NumPy, Pandas, Matplotlib)",
-      "Machine Learning",
-      "Apache Spark MLlib",
-      "Time Basic Linux / Terminal Commands",
-    ],
+    skills: ["Postman/Swagger", "Git & GitHub", "Excel/Word/PowerPoint", "AI Integration"],
   },
 ];
 
 export default function Skills() {
   return (
-    <section className="px-6 py-16 max-w-5xl mx-auto" id="skills">
+    <section className="px-6 py-20 max-w-5xl mx-auto border-t border-gray-200 dark:border-gray-800" id="skills">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">Skills</h2>
       <p className="mb-6 text-gray-700 dark:text-gray-300">
         These are the main technologies and tools I use in mobile development, backend engineering, and full-stack
@@ -43,15 +34,17 @@ export default function Skills() {
         {skillGroups.map((group) => (
           <div
             key={group.title}
-            className="p-5 rounded-xl border bg-gray-100 border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+            className="p-5 rounded-xl border bg-gray-100 border-gray-200 dark:bg-gray-900 dark:border-gray-700
+            transition hover:scale-[1.02] hover:shadow-lg"
           >
             <h3 className="text-xl font-semibold mb-3">{group.title}</h3>
             <div className="flex flex-wrap gap-2">
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800
-                             dark:bg-gray-800 dark:text-gray-200"
+                  className="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800 border border-transparent
+                             dark:bg-gray-800 dark:text-gray-200
+                             hover:bg-primary/20 hover:border-primary dark:hover:bg-primary/20 transition"
                 >
                   {skill}
                 </span>
